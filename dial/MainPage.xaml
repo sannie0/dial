@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dial.MainPage">
+
+    <Grid>
+            <Image
+                Source="clocknumbers.jpeg"
+                WidthRequest="400"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+            <Line X1="197"
+                  Y1="240"
+                  X2="197"
+                  Y2="400"
+                  StrokeThickness="2"
+                  Stroke="Red" 
+                  x:Name="SecondArrow">
+            <Line.AnchorX>0.5</Line.AnchorX>
+            <Line.AnchorY>0.5</Line.AnchorY>
+            </Line>
+            <Line X1="197"
+                  Y1="245"
+                  X2="197"
+                  Y2="395"
+                  StrokeThickness="3"
+                  Stroke="Black" 
+                  x:Name="MinuteArrow">
+            <Line.AnchorX>0.5</Line.AnchorX>
+            <Line.AnchorY>0.5</Line.AnchorY>
+            </Line>    
+            <Line X1="197"
+                  Y1="270"
+                  X2="197"
+                  Y2="400"
+                  StrokeThickness="4"
+                  Stroke="Black" 
+                  x:Name="HourArrow">
+                  <Line.AnchorX>0.5</Line.AnchorX>
+                  <Line.AnchorY>0.5</Line.AnchorY>
+            </Line>   
+            <Ellipse Fill="Black"
+                     WidthRequest="15"
+                     HeightRequest="15"
+                     HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand"/>
+    </Grid>
+      <!--<ContentPage.BindingContext>
+            <local:MainPage/>
+      </ContentPage.BindingContext>-->
+</ContentPage>
